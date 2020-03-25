@@ -1,6 +1,6 @@
 const EventEmitter = require('events')
 const Cap = require('cap').Cap, decoders=require('cap').decoders, PROTOCOL=decoders.PROTOCOL
-const zwiftProtoRoot = require('zwift-mobile-api/src/zwiftProtoBuf')
+const zwiftProtoRoot = require('protoBuf');
 const buffer = new Buffer(65535)
 const clientToServerPacket = zwiftProtoRoot.lookup('ClientToServer')
 const serverToClientPacket = zwiftProtoRoot.lookup('ServerToClient')
